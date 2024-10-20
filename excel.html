@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 5 Excel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="excel-form">
+            <label for="numbers">Enter your numbers separated by space:</label>
+            <input type="text" id="numbers" required><br>
+            <input type="radio" id="sum" name="function" value="sum" checked>
+            <label for="sum">AutoSum</label>
+            <input type="radio" id="average" name="function" value="average">
+            <label for="average">Average</label>
+            <input type="radio" id="max" name="function" value="max">
+            <label for="max">Maximum</label>
+            <input type="radio" id="min" name="function" value="min">
+            <label for="min">Minimum</label><br>
+            <button type="button" onclick="myExcelFuns()">Calculate</button>
+        </form>
+        <div id="result">Result will be printed here</div>
+    </main>
+    <footer>
+        <p>ILAC & EFREI - HTML, CSS, and JavaScript Assignment</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
